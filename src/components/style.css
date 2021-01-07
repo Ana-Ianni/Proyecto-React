@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+
+#root{
+    min-height: 100vh;
+}
+
+body{
+    background-color: #DFF8FE;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+}
+
+header{
+    height: 8vh;
+    width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;}
+
+.logo h1{
+    font-family: 'Titan One', cursive;
+    color: #F01159;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;}
+
+.links-nav--wrap{
+    width: 50%;
+    align-items: center;}
+
+.links-nav{
+    display: flex;
+    justify-content: space-between;}
+
+.links-nav li{
+    text-decoration: none;
+    list-style-type: none;
+    height: 8vh;}
+
+.link-nav{
+    text-decoration: none;
+    color: #003458;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 8vh;}
+
+.shoppingCart{
+    height: 8vh;
+    align-items: center;}
+
+.cart{
+    height: 8vh;
+    max-width: 35px;}
+
+.itemListCont-wrap{
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    padding-top: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;}
+
+.card-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;}
+
+.card{
+    width: 22%;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    padding: 2rem;}
+
+.card:hover{
+    /*background-color: #82CDE5;*/
+    background-color: #aaddee;
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);}
+
+.card-img img{
+    max-width: 100%;}
+
+.card-info h2{
+    width: 100%;
+    text-align: center;
+    color: #003458;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.5rem;}
+
+.card-info p{
+    width: 100%;
+    text-align: center;
+    color: #003458;
+    font-weight: 700;
+    font-size: 1rem;}
+
+.card-btn{
+    display: block;}
+
+.btn-add{
+    width: 90%;
+    padding: 0.5rem;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    margin-top: 4%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #F01159;
+    text-transform: uppercase;
+    color: #DFF8FE;
+    border: none;
+    font-weight: 600;}
+
+.btn-add:hover{
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);}
+
+.btn-info{
+    width: 90%;
+    padding: 0.5rem;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1.5px #F01159;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #003450;
+    font-weight: 600;}
+
+.contador-wrap{
+    padding-top: 5vh;}
+
+.contador{
+    position: relative;
+    left: 5vw;
+    width: 6vw;
+    background-color: #d6ffff;
+    border-radius: 10%;}
+
+.contador p{
+    text-align: center;
+    color: #24262e;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.btn-wrap{
+    border-top: solid #24262e 1px;
+    width: 100%;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;}
+
+.btn-wrap button{
+    border: none;
+    background-color: transparent;
+    color: #24262e;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;}
+
+.reset{
+    padding-left: 15%;
+    padding-right: 15%;}
+
+/*.greeting-title{
+    width: 60%;
+    position: relative;
+    left: 5vw;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #24262e;
+    font-weight: 700;}*/
+
+/* .itemListCont-wrap{
+    height: auto;
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    z-index: -1;
+    background-color: white;
+    padding-top: 20vh;} */
