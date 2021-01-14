@@ -1,11 +1,11 @@
-import React , {useState} from 'react'
+import React from 'react'
 import './style.css';
-import ItemList from "./ItemList";
+import itemsList from "./itemsList";
 
 const Item = () =>{
-    console.log(ItemList);
+    console.log(itemsList);
     
-    const listItems = ItemList.map((item)=>
+    const listItems = itemsList.map((item)=>
         <div className="card" key={item.id}>
             <div className="card-img">
                 <img src={item.prod_img}/>

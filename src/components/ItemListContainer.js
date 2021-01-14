@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react'
 import './style.css';
 import ItemCount from "./ItemCount";
-import Item from "./Item";
+import ItemP from "./ItemP";
 
 const ItemListContainer = ({greeting}) =>{
 
@@ -22,8 +22,9 @@ const ItemListContainer = ({greeting}) =>{
     return (
     <>
     <main className="itemListCont-wrap">
-        <Item/>
+        <ItemP/>
     </main>
+    
     <section className="contador-wrap">
 
         <ItemCount 
