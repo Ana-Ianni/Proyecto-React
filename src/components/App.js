@@ -1,13 +1,14 @@
 import React from 'react'
 import NavBar from "./NavBar"
-import ItemListContainer from "./ItemListContainer"
+import Main from "./Main"
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return(
-    <div>
+    <BrowserRouter>
       <NavBar/>
-      <ItemListContainer greeting="Oops! Esta página aún se encuentra bajo construcción..."/>
-    </div>
+      <Main/>
+    </BrowserRouter>
   );
 }
 

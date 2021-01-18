@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css';
 import itemsList from "./itemsList";
+import { NavLink } from "react-router-dom";
 
 const Item = () =>{
     console.log(itemsList);
@@ -16,7 +17,7 @@ const Item = () =>{
             </div>
             <div className="card-btn">
                 <button className="btn-add">Añadir al carrito</button>
-                <button className="btn-info">Más información</button>
+                <button className="btn-info"><NavLink to = {`/producto/${item.id}`}>Más Información</NavLink></button>
             </div>
         </div>
     );
