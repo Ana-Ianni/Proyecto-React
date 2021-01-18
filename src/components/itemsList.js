@@ -11,7 +11,7 @@ const itemsList = [
         temperature:"Templada",
         water:"Unicamente cuando la tierra esté seca",
         price : 500,
-        prod_img : "./multimedia/espada-san-jorge.png", 
+        prod_img : "/multimedia/espada-san-jorge.png", 
     },
     {
         id : 2,
@@ -22,7 +22,7 @@ const itemsList = [
         temperature:"Templada/Cálida",
         water:"Unicamente cuando la tierra esté seca",
         price : 400,
-        prod_img : "./multimedia/monstera.png"
+        prod_img : "/multimedia/monstera.png"
     },
     {
         id : 3,
@@ -33,7 +33,7 @@ const itemsList = [
         temperature:"Entre los 10°C Y 20°C",
         water:"La tierra debe mantenerse húmeda",
         price : 450,
-        prod_img : "./multimedia/hosta.png"
+        prod_img : "/multimedia/hosta.png"
     },
     {
         id : 4,
@@ -44,7 +44,7 @@ const itemsList = [
         temperature:"18°C - 25°C",
         water:"Máximo 2 veces por semana",
         price : 600,
-        prod_img : "./multimedia/lirio-de-paz.png"
+        prod_img : "/multimedia/lirio-de-paz.png"
     },
     {
         id : 5,
@@ -55,7 +55,7 @@ const itemsList = [
         temperature:"5°C - 30°C",
         water:"Unicamente cuando la tierra esté seca",
         price : 600,
-        prod_img : "./multimedia/suculentas.png"
+        prod_img : "/multimedia/suculentas.png"
     },
     {
         id : 6,
@@ -66,7 +66,7 @@ const itemsList = [
         temperature:"5°C - 30°C",
         water:"Unicamente cuando la tierra esté seca",
         price : 300,
-        prod_img : "./multimedia/piel-cocodrilo.png"
+        prod_img : "/multimedia/piel-cocodrilo.png"
     }
 ]
 

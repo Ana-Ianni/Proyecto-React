@@ -7,9 +7,9 @@ const ItemCount = ({ state, onAdd, reset, onSubstract}) =>{
         <div className="contador">
             <p>{state}</p>
             <div className="btn-wrap">
-            <button onClick={ onAdd }> + </button>
-            <button onClick={ reset } className="reset"> Borrar </button>
             <button onClick={ onSubstract }> - </button>
+            <button onClick={ reset } className="reset"> Borrar </button>
+            <button onClick={ onAdd }> + </button>
             </div>
         </div>
     );

@@ -4,20 +4,6 @@ import ItemCount from "./ItemCount";
 import ItemP from "./ItemP";
 
 const ItemListContainer = ({greeting}) =>{
-
-    const [state, setState] = useState(0)
-    
-    const onAdd = () => {
-        setState(state + 1)
-    }
-
-    const onSubstract = () => {
-        setState(state - 1)
-    }
-
-    const reset = () => {
-        setState(0)
-    }
     
     return (
     <>
@@ -26,13 +12,6 @@ const ItemListContainer = ({greeting}) =>{
     </main>
     
     <section className="contador-wrap">
-
-        <ItemCount 
-            state={state} 
-            onSubstract={onSubstract}
-            onAdd={onAdd}
-            reset={reset}
-        />
 
     </section>
     </>
