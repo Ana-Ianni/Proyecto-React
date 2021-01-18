@@ -3,21 +3,16 @@ import ItemDetail from './ItemDetail';
 import { useParams } from "react-router-dom";
 
 function ItemDetailContainer() {
-    const [ item, setItem ] = useState()
-
-    const { id } = useParams()
 
     useEffect(() => {
         const promiseDetail = new Promise((resolve, reject)=>{
         setTimeout(function(){
-            console.log("hola"); 
+            console.log("Cargando..."); 
         }, 2000);
         }
         )
-        promiseDetail.then(result => setItem(result)) 
-        promiseDetail.catch(err => console.log("Error")) 
-
-    },  [id]);
+        promiseDetail.then(console.log("Mostrando producto")) 
+    },  []);
 
     return (
         <div className="itemDetailContainer">
