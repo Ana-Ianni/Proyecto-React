@@ -1,23 +1,17 @@
 import React, {useState} from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import './style.css';
 import ItemCount from './ItemCount';
 import itemsList from "./itemsList";
 
 const ItemDetail = () => {
 
-    const [state, setState] = useState(0)
-    
-    const onAdd = () => {
-        setState(state + 1)
-    }
+    const [contadorDetail, SetContadorDetail] = useState (null);
 
-    const onSubstract = () => {
-        setState(state - 1)
-    }
+    const onAdd = cant => {
+        console.log("Se han agregado " + cant + " producto/s al carrito")
 
-    const reset = () => {
-        setState(0)
+        SetContadorDetail(cant)
     }
 
     const parametros = useParams()
@@ -35,14 +29,13 @@ const ItemDetail = () => {
                     <p className="ubicacion">Ubicación: {Detail.placement}</p>
                     <p className="temp">Temperatura ideal: {Detail.temperature}</p>
                     <p className="riego">Riego: {Detail.water}</p>
-                    <p className="pcio">$ {Detail.price}</p>
+                    <p className="pcio">${Detail.price}</p>
                     <div className="btns-wrap">
-                        <ItemCount 
-                            state={state} 
-                            onSubstract={onSubstract}
-                            onAdd={onAdd}
-                            reset={reset}/>
-                        <button className="detail-add">Añadir al carrito</button>
+                        <ItemCount stock={6} initial={1} onAdd={onAdd}/>
+                        {contadorDetail && 
+                        <Link to="/carrito">
+                        <button type="submit" className="buy">Comprar</button>
+                        </Link>}
                     </div>
                 </div>
                 <div className="Detail-img">
@@ -56,3 +49,5 @@ const ItemDetail = () => {
 }
 
 export default ItemDetail;
+
+

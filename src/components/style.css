@@ -232,10 +232,32 @@ header{
     width: 100%;}
 
 .btns-wrap{
-    margin-top: 4rem;
-    display: flex;}
+    margin-top: 2rem;}
 
 .detail-add{
+    top: 0px;
+    position: relative;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    width: 40%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #F01159;
+    border: 3px solid #F01159;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;}
+
+.itemCount-wrap{
+    display: flex;
+    width: 50vw;}
+
+.buy{
+    position: relative;
+    left: 20%;
+    margin-top: 2rem;
     font-size: 1.3rem;
     width: 60%;
     border-radius: 10px;
@@ -245,7 +267,10 @@ header{
     color: #DFF8FE;
     border: none;
     font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
 
 /*.greeting-title{
     width: 60%;

@@ -1,17 +1,43 @@
 import React , {useState} from 'react'
 import './style.css';
 
-const ItemCount = ({ state, onAdd, reset, onSubstract}) =>{
+const ItemCount = ({ stock, initial, onAdd}) =>{
+
+    const [contador, setContador] = useState(initial)
+    
+    const sumar = () => {
+        if(contador < stock){
+            setContador(contador + 1)
+        }
+    }
+
+    const restar = () => {
+        if(contador > 1){
+            setContador(contador - 1)
+        }
+    }
+
+    const reset = () => {
+        setContador(0)
+    } 
+
+    const addCart = () =>{
+        onAdd(contador)
+    }
     
     return(
+        <div className="itemCount-wrap">
         <div className="contador">
-            <p>{state}</p>
+            <p>{contador}</p>
             <div className="btn-wrap">
-            <button onClick={ onSubstract }> - </button>
+            <button onClick={ restar }> - </button>
             <button onClick={ reset } className="reset"> Borrar </button>
-            <button onClick={ onAdd }> + </button>
+            <button onClick={ sumar }> + </button>
             </div>
         </div>
+        <button type="submit" className="detail-add"  onClick={addCart}>Añadir al Carrito</button>
+        </div>
+
     );
 }
 
