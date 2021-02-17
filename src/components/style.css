@@ -61,14 +61,6 @@ header{
     height: 8vh;
     max-width: 35px;}
 
-.itemListCont-wrap{
-    width: 100vw;
-    position: relative;
-    top: 0px;
-    padding-top: 8vh;
-    padding-left: 5vw;
-    padding-right: 5vw;}
-
 .card-wrap{
     width: 100%;
     display: flex;
@@ -76,10 +68,12 @@ header{
     flex-flow: row wrap;}
 
 .card{
-    width: 22%;
+    width: 24%;
     border-radius: 10px;
     margin-bottom: 5vh;
-    padding: 2rem;}
+    padding: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;}
 
 .card:hover{
     /*background-color: #82CDE5;*/
@@ -91,12 +85,16 @@ header{
 .card-img img{
     max-width: 100%;}
 
+.card-info{
+    padding-bottom: 1.2rem;
+}
+
 .card-info h2{
     width: 100%;
     text-align: center;
     color: #003458;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.5rem;}
 
 .card-info p{
@@ -119,9 +117,13 @@ header{
     cursor: pointer;
     background-color: #F01159;
     text-transform: uppercase;
-    color: #DFF8FE;
     border: none;
     font-weight: 600;}
+
+.btn-add a{
+    color: #DFF8FE;
+    text-decoration: none;
+}
 
 .btn-add:hover{
     -webkit-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.75);
@@ -129,13 +131,17 @@ header{
     box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);}
 
 .btn-info{
-    width: 90%;
-    padding: 0.5rem;
-    margin-left: 5%;
-    margin-bottom: 3%;
-    border-radius: 5px;
+    position: relative;
+    left: 10%;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    width: 80%;
+    border-radius: 10px;
     cursor: pointer;
-    border: solid 1.5px #F01159;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: solid 2px #F01159;
     background-color: transparent;
     text-transform: uppercase;
     color: #003450;
@@ -256,10 +262,10 @@ header{
 
 .buy{
     position: relative;
-    left: 20%;
+    left: 10%;
     margin-top: 2rem;
     font-size: 1.3rem;
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
     cursor: pointer;
     background-color: #F01159;
@@ -271,21 +277,85 @@ header{
     padding-bottom: 1rem;
 }
 
+.itemContainer{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 5rem;
+}
 
-/*.greeting-title{
+.itemsWrap{
+    position: relative;
+    display: flex;
+    width: 85%;}
+
+.category-wrap{
+    width: 15%;}
+
+.category a{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    font-weight: 600;}
+
+.cartContainer{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+
+.cartTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #003450;}
+
+.cart-left{
     width: 60%;
-    position: relative;
-    left: 5vw;
-    font-size: 4rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #24262e;
-    font-weight: 700;}*/
+    margin-right: 2rem;}
 
-/* .itemListCont-wrap{
-    height: auto;
-    width: 100vw;
-    position: relative;
-    top: 0px;
-    z-index: -1;
-    background-color: white;
-    padding-top: 20vh;} */
+.checkoutProduct{
+    border: solid 2px #97cce8;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 2rem;}
+
+.checkoutProduct__image{
+    height: 250px;
+    margin-right: 3rem;}
+
+.checkoutProduct__info{
+    padding-top: 2rem;}
+
+.checkoutProduct__title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #003450;
+    margin-bottom: 1rem;}
+
+.checkoutProduct__price{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #003450;
+    margin-bottom: 2.5rem;}
+
+.cart-right{
+    background-color: #003450;
+    border-radius: 20px;
+    width: 35%;
+    padding: 2rem;
+    height: 14rem;}
+
+.subtotal p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #DFF8FE;
+    margin-bottom: 1.5rem;}
+
+.btn-subtotal{
+    width: 100%;
+    margin-bottom: 1rem!important;}
+
+

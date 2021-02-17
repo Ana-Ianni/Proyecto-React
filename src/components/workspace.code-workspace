@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"name": "ATavola",
+			"path": "..\\..\\..\\ATavola"
+		},
+		{
+			"name": "Proyecto Software",
+			"path": "..\\..\\..\\Proyecto Software"
+		},
+		{
+			"name": "desarrollo web",
+			"path": "..\\..\\..\\desarrollo web"
+		},
+		{
+			"path": "..\\..\\..\\js"
+		},
+		{
+			"path": "..\\..\\..\\js jr"
+		},
+		{
+			"path": "..\\..\\..\\acronimo"
+		},
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\repo\\uChuy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proyectofinal"
+	}
+}

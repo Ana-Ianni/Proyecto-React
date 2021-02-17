@@ -1,9 +1,13 @@
 import React from 'react'
 import './style.css';
-import CartWidget from "./CartWidget";
 import { Link, NavLink } from "react-router-dom";
+import {useStateValue} from "./CartContext";
+import Badge from '@material-ui/core/Badge';
+import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import IconButton from '@material-ui/core/IconButton';
 
 const NavBar = function(){
+    const [{cart}, dispatch] = useStateValue();
     return(
         <>
         <header className="nav">
@@ -12,10 +16,15 @@ const NavBar = function(){
             </div>
             <div className="links-nav--wrap">
                 <ul className="links-nav">
-                    <li><NavLink to="/Home" className="link-nav">Home</NavLink></li>
+                    <li><NavLink to="/" exact className="link-nav">Home</NavLink></li>
                     <li><NavLink to="/Catalogo" className="link-nav">Catálogo</NavLink></li>
-                    <li><NavLink to="/Nosotros" className="link-nav">Nosotros</NavLink></li>
-                    <CartWidget></CartWidget>
+                    <Link to="/Carrito">
+                        <IconButton>
+                            <Badge badgeContent={cart?.length} color="secondary">
+                            <ShoppingCartOutlinedIcon/>
+                            </Badge>
+                        </IconButton>
+                    </Link>
                 </ul>
             </div>
         </header>
