@@ -3,14 +3,16 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavBar from "./NavBar"
 import ItemDetailContainer from "./ItemDetailContainer";
 import Cart from "./Cart"
-import {CartProvider} from "./CartContext"
-import reducer, {initialState} from "./reducer"
+import {useStateValue} from "./CartContext";
 import {firestore} from "./FirebaseConfig"
 import ItemContainer from './ItemContainer';
+import LogIn from "./LogIn"
+import {auth} from "./FirebaseConfig"
+import Payment from "./Payment";
 
-const App = () => {
-
+function App(){
   const [productos, SetProductos] = useState([]);
+  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
 
@@ -25,14 +27,30 @@ const App = () => {
     .catch(()=>{
       console.log("Falla en el pedido de datos")
     })
-  }, [])
+
+
+    auth.onAuthStateChanged((authUser) =>{
+      console.log("nombre de usuario: ", authUser);
+
+      if(authUser){
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+          dispatch({
+            type: "SET_USER",
+            user: null,
+          });
+      }
+    });
+  }, []);
 
   return(
-    <CartProvider initialState={initialState} reducer={reducer}>
       <BrowserRouter>
         <NavBar/>
         <Switch>
-            <Route path="/Catalogo">
+            <Route exact path="/">
                 <ItemContainer/>
             </Route>
             
@@ -43,9 +61,16 @@ const App = () => {
             <Route path="/Carrito">
                 <Cart/>
             </Route>
+
+            <Route path="/LogIn">
+                <LogIn/>
+            </Route>
+
+            <Route path="/Pago">
+              <Payment/>
+            </Route>
         </Switch>
       </BrowserRouter>
-    </CartProvider>
   );
 }
 

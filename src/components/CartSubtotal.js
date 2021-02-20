@@ -3,9 +3,10 @@ import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from "./CartContext";
 import { getCartTotal } from "./reducer";
 import {Button} from '@material-ui/core/';
+import { useHistory } from "react-router-dom";
 
 export default function CartSubtotal(){
-
+    const history = useHistory();
     const [{ cart }, dispatch] = useStateValue();
     
     const EmptyCart = () =>{
@@ -31,7 +32,7 @@ export default function CartSubtotal(){
                     prefix={"$"}
                   />
           <div className="iniciarCompra-wrap">
-            <Button variant="contained" size="large" color="primary" className="btn-subtotal">Iniciar Compra</Button>
+            <Button variant="contained" size="large" color="primary" className="btn-subtotal" onClick={ e => history.push("/Pago")}>Iniciar Compra</Button>
             <Button variant="contained" size="large" color="secondary" className="btn-subtotal" onClick={EmptyCart}>Vaciar carrito</Button>
           </div>
         </div>

@@ -4,10 +4,12 @@ import {useStateValue} from "./CartContext";
 import CheckoutProduct from './CheckoutProduct';
 
 export default function Cart() {
-    const [{cart}, dispatch] = useStateValue();
+    const [{cart, user}, dispatch] = useStateValue();
+    
     return(
         <div className="cartContainer">
             <div className="cart-left">
+                <h3>¡Hola {user?.email}!</h3>
                 <h2 className="cartTitle">Tu Carrito de Compras</h2>
                 {cart.map(item => (
                     <CheckoutProduct

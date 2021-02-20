@@ -7,15 +7,22 @@ import {firestore} from "./FirebaseConfig"
 
 const ItemDetail = () => {
 
-    const [contadorDetail, SetContadorDetail] = useState (null);
     const [detalle, SetDetalle] = useState([]);
     const [{cart}, dispatch] = useStateValue();
 
     const parametros = useParams()
     const id = parametros.id
 
-    const onAdd = cant => {
-        SetContadorDetail(cant)
+    const BuyNow = () =>{
+        dispatch({
+            type: 'BUY_NOW', 
+            item: {
+                id: id,
+                title: detalle[0].name,
+                image: detalle[0].image,
+                price: detalle[0].price,
+            },
+        })
     }
 
     const AddToCart = () =>{
@@ -58,10 +65,10 @@ const ItemDetail = () => {
                 <p className="pcio">${Detail.price}</p>
                 <div className="btns-wrap">
 
-                    <Link to="/">
-                    <button type="submit" className="buy">Comprar Ahora</button>
+                    <Link to="/Pago">
+                    <button type="submit" className="buy" onClick={BuyNow}>Comprar Ahora</button>
                     </Link>
-                    <Link to="/carrito">
+                    <Link to="/Carrito">
                     <button type="submit" className="btn-info" onClick={AddToCart} >Agregar al Carrito</button>
                     </Link>
                 </div>

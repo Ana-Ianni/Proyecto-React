@@ -34,12 +34,27 @@ header{
     font-weight: 300;}
 
 .links-nav--wrap{
-    width: 50%;
+    width: 25%;
     align-items: center;}
+
+.link-user{
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    padding: 1rem;}
+
+.link-user span{
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    color: #003450;}
 
 .links-nav{
     display: flex;
     justify-content: space-between;}
+
+.links-nav a{
+    padding: 0.5rem;
+}
 
 .links-nav li{
     text-decoration: none;
@@ -51,7 +66,7 @@ header{
     color: #003458;
     font-weight: 600;
     font-size: 20px;
-    line-height: 8vh;}
+    line-height: 24px;}
 
 .shoppingCart{
     height: 8vh;
@@ -357,5 +372,95 @@ header{
 .btn-subtotal{
     width: 100%;
     margin-bottom: 1rem!important;}
+
+.Login{
+    margin-top: 3rem;
+    margin-left: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #97cce8;
+    border-radius: 20px;}
+
+.logo-form, .LoginContainer h2{
+    width: 100%;
+    text-align: center;}
+
+.logo-form{
+    margin-bottom: 2rem;}
+
+.LoginContainer h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #003450;}
+
+.input-form{
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background-color: #DFF8FE;
+    height: 2rem;
+    padding: 0.5rem;}
+
+.label-form{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #003450;}
+
+.btn-form{
+    width: 60%;
+    margin-left: 20%!important;}
+
+.btn-form-wrap{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    text-align: center;}
+
+.margin-b{
+    margin-bottom: 3rem;
+}
+
+.small-form{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #003450;}
+
+.payment{
+    padding: 3rem;}
+
+.payment-container{
+    margin-left: 10%;
+    margin-right: 10%;}
+
+.payment-data p{
+    color: #003450;
+    font-size: 1.5rem;
+    font-weight: 600;}
+
+.payment-data h3, .payment-title h3, .payment-priceContainer h3{
+    color: #003450;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;}
+
+.input-form-p{
+    width: 100%;
+    border: 2px solid #aaddee;
+    border-radius: 7px;
+    background-color: #DFF8FE;
+    height: 2rem;
+    padding: 0.5rem;}
+
+.confirm{
+    width: 40%;
+    left: 30%;
+    position: relative;
+}
 
 
