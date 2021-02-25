@@ -300,6 +300,7 @@ header{
 }
 
 .itemsWrap{
+    flex-wrap: wrap;
     position: relative;
     display: flex;
     width: 85%;}
@@ -460,7 +461,11 @@ header{
 .confirm{
     width: 40%;
     left: 30%;
-    position: relative;
+    position: relative;}
+
+.active{
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 
