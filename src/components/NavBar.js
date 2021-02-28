@@ -20,16 +20,16 @@ const NavBar = function(){
     return(
         <>
         <header className="nav">
-            <NavLink to="/" exact className="link-nav">
+            <Link to="/" exact className="link-nav">
             <div className="logo">
                 <h1>Leafy</h1>
             </div>
-            </NavLink>
+            </Link>
             <div className="links-nav--wrap">
                 <ul className="links-nav">
                     <div className="link-user">
                         <span>¡Hola {!user ? "invitado!" : user.email}</span>
-                        <NavLink to={!user && "/Login"} className="link-nav" onClick={handleAuthenticaton}>{user ? "Cerrar Sesión" : "Ingresar"}</NavLink>
+                        <Link to={!user && "/Login"} className="link-nav" onClick={handleAuthenticaton}>{user ? "Cerrar Sesión" : "Ingresar"}</Link>
                     </div>
                     <Link to="/Carrito">
                         <IconButton>

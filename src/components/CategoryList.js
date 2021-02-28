@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './style.css';
 import {firestore} from "./FirebaseConfig"
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default function CategoryList() {
     
@@ -24,7 +24,7 @@ export default function CategoryList() {
 
     const category = categorias.map((category)=>
     <div className="category" key={category.id}>
-        <Link to={`/categorias/${category.id}`}>{category.name}</Link>
+        <NavLink to={`/categorias/${category.id}`}>{category.name}</NavLink>
     </div>
     )
 
