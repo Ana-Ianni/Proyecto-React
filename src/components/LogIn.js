@@ -50,10 +50,10 @@ export default function LogIn(){
                     <input type="password" className="input-form margin-b" value={password} onChange={e => SetPassword(e.target.value)}/>
 
                     <div className="btn-form-wrap">
-                    <Button variant="contained" size="large" color="secondary" className="btn-form" type="submit" onClick={signIn}>Iniciar Sesión</Button>
+                    <Button variant="contained" size="large" color="primary" className="btn-form" type="submit" onClick={signIn}>Iniciar Sesión</Button>
 
                     <small className="small-form">¿No tenés una cuenta?</small>
-                    <Button variant="outlined" color="secondary" className="btn-form" onClick={register}>Registrate</Button>
+                    <Button variant="outlined" color="primary" className="btn-form" onClick={register}>Registrate</Button>
                     </div>
                 </form>
             </div>

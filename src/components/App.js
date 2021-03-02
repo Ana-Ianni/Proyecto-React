@@ -9,6 +9,8 @@ import ItemContainer from './ItemContainer';
 import LogIn from "./LogIn"
 import {auth} from "./FirebaseConfig"
 import Payment from "./Payment";
+import theme from "./theme";
+import { MuiThemeProvider} from '@material-ui/core/styles';
 
 function App(){
   const [productos, SetProductos] = useState([]);
@@ -48,28 +50,30 @@ function App(){
 
   return(
       <BrowserRouter>
-        <NavBar/>
-        <Switch>
-            <Route exact path="/">
-                <ItemContainer/>
-            </Route>
-            
-            <Route path="/Producto/:id">
-                <ItemDetailContainer/>
-            </Route>
+        <MuiThemeProvider theme={theme}>
+          <NavBar/>
+          <Switch>
+              <Route exact path="/">
+                  <ItemContainer/>
+              </Route>
+              
+              <Route path="/Producto/:id">
+                  <ItemDetailContainer/>
+              </Route>
 
-            <Route path="/Carrito">
-                <Cart/>
-            </Route>
+              <Route path="/Carrito">
+                  <Cart/>
+              </Route>
 
-            <Route path="/LogIn">
-                <LogIn/>
-            </Route>
+              <Route path="/LogIn">
+                  <LogIn/>
+              </Route>
 
-            <Route path="/Pago">
-              <Payment/>
-            </Route>
-        </Switch>
+              <Route path="/Pago">
+                <Payment/>
+              </Route>
+          </Switch>
+        </MuiThemeProvider>
       </BrowserRouter>
   );
 }

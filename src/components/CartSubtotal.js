@@ -33,7 +33,7 @@ export default function CartSubtotal(){
                   />
           <div className="iniciarCompra-wrap">
             <Button variant="contained" size="large" color="primary" className="btn-subtotal" onClick={ e => history.push("/Pago")}>Iniciar Compra</Button>
-            <Button variant="contained" size="large" color="secondary" className="btn-subtotal" onClick={EmptyCart}>Vaciar carrito</Button>
+            <Button variant="outlined" size="large" color="secondary" className="btn-subtotal" onClick={EmptyCart}>Vaciar carrito</Button>
           </div>
         </div>
     )

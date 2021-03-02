@@ -33,7 +33,7 @@ const NavBar = function(){
                     </div>
                     <Link to="/Carrito">
                         <IconButton>
-                            <Badge badgeContent={cart?.length} color="secondary">
+                            <Badge badgeContent={cart?.length} color="primary">
                             <ShoppingCartOutlinedIcon/>
                             </Badge>
                         </IconButton>

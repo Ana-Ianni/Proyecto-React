@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #DFF8FE;
+    background-color: #FCFEFD;
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
 }
@@ -28,7 +28,7 @@ header{
 
 .logo h1{
     font-family: 'Titan One', cursive;
-    color: #F01159;
+    color: #4EB799;
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: 300;}
@@ -46,7 +46,7 @@ header{
 .link-user span{
     font-size: 0.7rem;
     line-height: 0.7rem;
-    color: #003450;}
+    color: #49525A;}
 
 .links-nav{
     display: flex;
@@ -63,7 +63,7 @@ header{
 
 .link-nav{
     text-decoration: none;
-    color: #003458;
+    color: #49525A;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;}
@@ -83,6 +83,9 @@ header{
     flex-flow: row wrap;}
 
 .card{
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
     width: 24%;
     border-radius: 10px;
     margin-bottom: 5vh;
@@ -90,12 +93,12 @@ header{
     margin-right: 1rem;
     margin-left: 1rem;}
 
-.card:hover{
-    /*background-color: #82CDE5;*/
+/*.card:hover{
+    background-color: #82CDE5;
     background-color: #aaddee;
     -webkit-box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);
     -moz-box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);
-    box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);}
+    box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.2);}*/
 
 .card-img img{
     max-width: 100%;}
@@ -107,7 +110,7 @@ header{
 .card-info h2{
     width: 100%;
     text-align: center;
-    color: #003458;
+    color: #49525A;
     font-weight: 700;
     font-size: 1.3rem;
     line-height: 2.5rem;}
@@ -115,7 +118,7 @@ header{
 .card-info p{
     width: 100%;
     text-align: center;
-    color: #003458;
+    color: #49525A;
     font-weight: 700;
     font-size: 1rem;}
 
@@ -130,7 +133,7 @@ header{
     margin-top: 4%;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #F01159;
+    background-color: #4EB799;
     text-transform: uppercase;
     border: none;
     font-weight: 600;}
@@ -156,10 +159,10 @@ header{
     font-weight: 600;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border: solid 2px #F01159;
+    border: solid 2px #4EB799;
     background-color: transparent;
     text-transform: uppercase;
-    color: #003450;
+    color: #4EB799;
     font-weight: 600;}
 
 .contador-wrap{
@@ -212,7 +215,7 @@ header{
     padding: 5vw;}
 
 .Detail-info h2{
-    color: #003450;
+    color: #49525A;
     font-size: 4rem;
     margin-bottom: 0.5rem;}
 
@@ -222,21 +225,24 @@ header{
     margin-bottom: 1.5rem;}
 
 .desciption, .ubicacion, .temp, .riego{
-    color: #003450;
+    color: #49525A;
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 550;}
 
 .pcio{
-    color: #003450;
-    font-size: 1.8rem;
-    font-weight: 600;
+    color: #4EB799;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;}
 
 .Detail-img{
-    min-height: 92vh;
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    min-height: 90vh;
     width: 50vw;
-    background-color: #aaddee;
+    background-color: #F7FCFA;
     -webkit-border-top-left-radius: 60px;
     -webkit-border-bottom-left-radius: 60px;
     -moz-border-radius-topleft: 60px;
@@ -244,9 +250,9 @@ header{
     border-top-left-radius: 60px;
     border-bottom-left-radius: 60px;
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     left: 50vw;
-    padding: 5vw;}
+    padding: 4vw;}
 
 .Detail-img img{
     height: 100%;
@@ -265,8 +271,8 @@ header{
     cursor: pointer;
     background-color: transparent;
     text-transform: uppercase;
-    color: #F01159;
-    border: 3px solid #F01159;
+    color: #4EB799;
+    border: 3px solid #4EB799;
     font-weight: 600;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;}
@@ -283,7 +289,7 @@ header{
     width: 80%;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #F01159;
+    background-color: #4EB799;
     text-transform: uppercase;
     color: #DFF8FE;
     border: none;
@@ -323,17 +329,23 @@ header{
     min-height: 100%;
 }
 
+.cart-left h3{
+    color: #49525A;
+}
+
 .cartTitle{
     font-size: 2rem;
     font-weight: 600;
-    color: #003450;}
+    color: #49525A;}
 
 .cart-left{
     width: 60%;
     margin-right: 2rem;}
 
 .checkoutProduct{
-    border: solid 2px #97cce8;
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
     display: flex;
     border-radius: 20px;
     margin-top: 2rem;}
@@ -348,17 +360,19 @@ header{
 .checkoutProduct__title{
     font-size: 2rem;
     font-weight: 600;
-    color: #003450;
+    color: #49525A;
     margin-bottom: 1rem;}
 
 .checkoutProduct__price{
     font-size: 2rem;
     font-weight: 600;
-    color: #003450;
+    color: #4EB799;
     margin-bottom: 2.5rem;}
 
 .cart-right{
-    background-color: #003450;
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
     border-radius: 20px;
     width: 35%;
     padding: 2rem;
@@ -367,7 +381,7 @@ header{
 .subtotal p{
     font-weight: 600;
     font-size: 1.5rem;
-    color: #DFF8FE;
+    color: #49525A;
     margin-bottom: 1.5rem;}
 
 .btn-subtotal{
@@ -381,7 +395,9 @@ header{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background-color: #97cce8;
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
     border-radius: 20px;}
 
 .logo-form, .LoginContainer h2{
@@ -394,13 +410,15 @@ header{
 .LoginContainer h2{
     margin-bottom: 1rem;
     font-size: 2rem;
-    color: #003450;}
+    color: #49525A;}
 
 .input-form{
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
     width: 100%;
     border: none;
     border-radius: 7px;
-    background-color: #DFF8FE;
     height: 2rem;
     padding: 0.5rem;}
 
@@ -408,7 +426,7 @@ header{
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1rem;
-    color: #003450;}
+    color: #49525A;}
 
 .btn-form{
     width: 60%;
@@ -439,22 +457,24 @@ header{
     margin-right: 10%;}
 
 .payment-data p{
-    color: #003450;
+    color: #49525A;
     font-size: 1.5rem;
     font-weight: 600;}
 
 .payment-data h3, .payment-title h3, .payment-priceContainer h3{
-    color: #003450;
+    color: #49525A;
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 2rem;}
 
 .input-form-p{
+    -webkit-box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 3px 15px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 15px 3px rgb(0 0 0 / 5%);
     width: 100%;
-    border: 2px solid #aaddee;
+    border: none;
     border-radius: 7px;
-    background-color: #DFF8FE;
     height: 2rem;
     padding: 0.5rem;}
 
